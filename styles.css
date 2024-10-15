@@ -1,0 +1,208 @@
+/* Banner Principal */
+
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn-banner {
+    background-color: #003366;
+    color: #FFDD00;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-banner:hover {
+    background-color: #002244;
+}
+
+/* Estilo para el contenedor del slider */
+.slider-container {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Activa el snap para deslizar las tarjetas de producto */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos móviles */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 10px;
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en WebKit (Chrome, Safari) */
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    flex: 0 0 auto; /* Evita que las tarjetas se estiren y se mantengan en su tamaño original */
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: start; /* Cada tarjeta se alinea al inicio cuando se hace scroll */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    font-size: 1.4em;
+    color: #003366;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.4em;
+    color: #003366;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.btn-product {
+    background-color: #FFDD00;
+    color: #003366;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Asegura que el botón esté al final de la tarjeta */
+}
+
+.btn-product:hover {
+    background-color: #FFD700;
+    color: #002244;
+}
+
+
+/* Información sobre el negocio */
+/* Información sobre el negocio */
+.about-us {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.about-us h2 {
+    font-size: 2.5em; /* Tamaño de fuente aumentado */
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-img-container {
+    flex: 1;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-info {
+    flex: 1;
+    padding: 40px; /* Aumenta el padding para más espacio */
+    text-align: left;
+    background-color: #fff; /* Fondo blanco para el texto */
+}
+
+.about-info p {
+    font-size: 1.2em; /* Tamaño de fuente aumentado */
+    color: #555;
+    line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
+    margin: 0;
+}
+
+
+/* Servicios */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card i {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #555;
+}
+

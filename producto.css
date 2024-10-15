@@ -1,0 +1,174 @@
+/* Banner Principal */
+.banner {
+    background: url('img/650.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    margin-bottom: 40px;
+    border-bottom: 5px solid #F7E07C; /* Línea decorativa en color amarillo */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Productos */
+.product-list {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f8f8f8; /* Fondo ligeramente gris para contraste */
+}
+
+.product-list h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #003366;
+    font-weight: 600;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Mayor espacio entre tarjetas */
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Bordes más redondeados */
+    overflow: hidden;
+    width: 280px; /* Ancho ajustado para uniformidad */
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px; /* Altura ajustada para mantener proporción */
+    object-fit: cover;
+    border-bottom: 2px solid #F7E07C; /* Línea decorativa en color amarillo */
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: 600;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.price {
+    font-size: 1.3em;
+    color: #F7E07C;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+/* Estilo del botón de añadir al carrito */
+.btn-cart {
+    background-color: #F7E07C;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: auto; /* Asegura que el botón esté en la parte inferior de la tarjeta */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid #E1C341;
+}
+
+.btn-cart:hover {
+    background-color: #F3D951;
+    transform: scale(1.05);
+}
+
+.btn-cart i {
+    font-size: 1.3em;
+    margin-right: 7px;
+}
+
+
+/* Estilo del botón de añadir al carrito */
+.btn-cart {
+    background-color: #F7E07C;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid #E1C341;
+}
+
+.btn-cart:hover {
+    background-color: #F3D951;
+    transform: scale(1.05);
+}
+
+.btn-cart i {
+    font-size: 1.3em;
+    margin-right: 7px;
+}
+
+/* Página exterior */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+/* Productos Destacados */
+.featured-products {
+    padding: 40px 20px;
+    background: #f8f8f8;
+}
+
+.featured-products h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #003366;
+    font-weight: 600;
+}

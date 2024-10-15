@@ -1,0 +1,217 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0faff; /* Azul muy claro */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #e6f7ff; /* Azul blanco */
+    color: #003366; /* Azul oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out; /* Animación de entrada */
+}
+
+.username {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo-img {
+    width: 100px; /* Aumenta el tamaño del logo */
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo-texto {
+    font-size: 2em; /* Aumenta el tamaño del texto */
+    font-weight: bold;
+    color: #003366; /* Azul oscuro */
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #003366; /* Azul oscuro */
+    font-size: 1.1em;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #e6f7ff; /* Azul blanco */
+    background-color: #003366; /* Azul oscuro */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Icono del carrito */
+nav ul li a .fas {
+    margin-right: 8px;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    max-width: 400px; /* Tamaño máximo para la barra de búsqueda */
+}
+
+.search-container form {
+    display: flex;
+    width: 100%;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 16px;
+}
+
+.search-container button {
+    background-color: #003366; /* Azul oscuro */
+    border: none;
+    padding: 8px;
+    border-radius: 20px; /* Bordes redondeados */
+    color: #e6f7ff; /* Azul blanco */
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    background-color: #002244; /* Azul más oscuro en hover */
+}
+
+/* Botones de autenticación */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 30px; /* Bordes redondeados */
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn-login {
+    background: linear-gradient(145deg, #09a3f0, #f8ffe6); /* Gradiente azul claro */
+    color: #003366; /* Texto azul oscuro */
+    border: 2px solid #003366; /* Borde azul oscuro */
+}
+
+.btn-login:hover {
+    background: linear-gradient(145deg, #09a3f0, #f8ffe6); /* Gradiente invertido */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.btn-register {
+    background: linear-gradient(145deg, #09a3f0, #f8ffe6); /* Gradiente azul claro */
+    color: #003366; /* Texto azul oscuro */
+    border: 2px solid #003366; /* Borde azul oscuro */
+}
+
+.btn-register:hover {
+    background: linear-gradient(145deg, #cceeff, #e6f7ff); /* Gradiente invertido */
+    color: #003366; /* Texto azul oscuro */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+
+/* Animación de entrada */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Contenedor del pie de página */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #e6f7ff; /* Azul blanco */
+    border-top: 1px solid #ddd;
+}
+
+/* Estilo del logo en el pie de página */
+.footer-logo-img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Contenido del pie de página */
+.footer-content {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Enlaces del pie de página */
+.footer-links a {
+    margin: 0 10px;
+    color: #003366; /* Azul oscuro */
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Iconos de redes sociales */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #003366; /* Azul oscuro */
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #cceeff; /* Azul claro */
+}
